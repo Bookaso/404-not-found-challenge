@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500&family=Space+Mono:wght@400;700&display=swap');
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+:root{
+    --img-size : 286.83px;
+    --header-margin: 20px 24px;
+    --details-1-fz: 48px;
+    --details-2-fz: 18px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono';
+    color: #333333;
+    height: 90vh;
+}
+header{
+    font-family: 'Inconsolata';
+    font-weight: 700;
+    font-size: 24px;
+    margin: var(--header-margin);
+}
+.image_container{
+    text-align: center;
+}
+.image_container img {
+    max-width: var(--img-size);
+}
+@media only screen and (min-width:1391px) {
+    :root{
+        --img-size : 539.22px;
+        --header-margin: 40px 70px;
+        --details-1-fz: 64px;
+        --details-2-fz: 24px;
+    }
+    main{
+        display: flex;
+        align-items: center;
+        margin: 160px 77px;
+    }
+    .details{
+        margin: 0 0 0 119px;
+    }
+    .details .details-2{
+        width: 65%;
+        line-height: 35.54px;
+    }
+}
+.details{
+    padding: 0 0 30px 24px;
+}
+.details .details-1{
+font-size: var(--details-1-fz);
+}
+.details .details-2{
+    font-weight: 400;
+    font-size: var(--details-2-fz);
+    line-height: 26.66px;
+}
+.details button{
+    border: none;
+    background-color: #333333;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 24px 43px;
+    margin:66px 0;
+}
+footer{
+    height: 60px;
+    margin-bottom: 50px;
+}
+footer p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #BDBDBD;
+    text-align: center;
+}
